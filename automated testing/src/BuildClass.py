@@ -21,7 +21,7 @@ class column:
         self.column_pos = column_pos  # class name
         self.reaction_pos = reaction_pos  # XPATH
         self.test_text = test_text
-        self.result = ""
+
 
     def fill_col(self):
         col = self.driver.find_element(By.CLASS_NAME, self.column_pos)
@@ -43,5 +43,4 @@ class column:
         # else:
         #     print("doesn't exist")
 
-        self.result = ResultText
         return ResultText
